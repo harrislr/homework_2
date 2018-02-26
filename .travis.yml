@@ -14,5 +14,3 @@ addons:
 apt:
 packages:
 - oracle-java8-installer
-before_install:
-  - cd java
