@@ -18,12 +18,15 @@
         <pathelement location="bin"/>
         <path refid="JUnit 4.libraryclasspath"/>
     </path>
+    <path id="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
+    <path id="run.CalcTest.classpath">
+        <path refid="homework2.classpath"/>
+        <path refid="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.launch"/>
-                <exclude name="**/*.xtend"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -59,9 +62,9 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="CalcTest" todir="${junit.output.dir}"/>
+            <test name="homework_2_group.homework_2.CalcTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="homework2.classpath"/>
+            <classpath refid="run.CalcTest.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
