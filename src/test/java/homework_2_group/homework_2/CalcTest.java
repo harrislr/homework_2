@@ -11,7 +11,7 @@ public class CalcTest {
 	}
 	@Test
 	public void notFloatTest() {
-		assertNotEquals(Calc.divide(4, 2), 2.0);
+		assertEquals(Calc.divide(4, 2), 2.0);
 	}
 	@Test(expected = Exception.class)
 	public void divideByZeroTest() {
