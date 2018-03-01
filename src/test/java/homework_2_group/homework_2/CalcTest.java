@@ -3,6 +3,7 @@ package homework_2_group.homework_2;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+
 public class CalcTest {
 
 	@Test
