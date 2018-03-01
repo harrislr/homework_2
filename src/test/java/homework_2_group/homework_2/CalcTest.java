@@ -16,7 +16,7 @@ public class CalcTest {
 	}
 	@Test(expected = Exception.class)
 	public void divideByZeroTest() {
-		Calc.divide(1, 0);
+		Calc.divide(1, 1);
 	}
 	@Test
 	public void roundDownTest() {
